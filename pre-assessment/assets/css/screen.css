@@ -1,6 +1,6 @@
 * {
-	margin: 0px;
-	padding: 0px;
+	margin: auto;
+	padding: 20px;
 }
 .hide-text {
 	text-indent: 100%;
@@ -48,11 +48,12 @@ body {
 .yt a:hover{
 	background-color: rgb(48, 168, 128);
 }
-img{
+imgv{
 	float: right;
 	border: #000;
 	border-width: 10px;
 	margin: 10px 10px 10px 10px;
+	display:block;
 }
 #header {
 	
