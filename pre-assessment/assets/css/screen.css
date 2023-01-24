@@ -1,6 +1,8 @@
 * {
 	margin: 0px;
 	padding: 0px;
+	background-image: url("bg-tile.jpg");
+	background-repeat: repeat-x;
 }
 .hide-text {
 	text-indent: 100%;
@@ -12,8 +14,8 @@ body {
 	font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
 	font-size: 16px;
 	line-height: 1.5em;
-	background-image: url("bg-tile.jpg");
-	background-repeat: repeat-x;
+	
+	
 }
 #container {
 	max-width: 800px;
@@ -56,7 +58,7 @@ img{
 .acc{
 	float: right;
 	border: #000;
-	border-width: 10px ;
+	border-width: 10px;
 	margin: auto;
 }
 #header {
