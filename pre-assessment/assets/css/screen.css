@@ -1,21 +1,17 @@
-/* Controls the design of the entire page*/
+/* Selects everything in the stylesheet, resets margin and padding */
 * {
-	margin: 0px;
-	padding: 0px;
+	margin: 0;
+	padding: 0;
 	
 }
-.hide-text {
-	text-indent: 100%;
-	white-space: nowrap;
-	overflow: hidden;
-	}
 body {
 	text-align: center;
 	font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
 	font-size: 16px;
 	line-height: 1.5em;
-	background-image: url('assets/img/bg-tile.jpg');
+	background-image: url('../img/bg-tile.jpg');
 	background-repeat: repeat-x;
+	background-color: #171717;
 	
 }
 #container {
@@ -30,11 +26,13 @@ body {
 .alert{
 	background-color: antiquewhite;
 	color: #572424;
+	padding:5px;
+	
 }
 #content h2{
 	background-color: whitesmoke;
 	color: rgb(189, 189, 254);
-	text-decoration: underline;
+	border-bottom: 1px solid black
 
 }
 #content h3{
@@ -48,27 +46,26 @@ body {
 	text-decoration: underline;
 }
 .yt a:hover{
-	background-color: rgb(48, 168, 128);
+	background-color: rgb(128, 240, 203);
 }
-img{
-	float: right;
-	border: #000;
-	border-width: 10px;
 	
-}
-.acc{
+.acc {
 	float: right;
-	border: #000;
-	border-width: 10px;
-	margin: 5px 5px 5px 5px;
-	padding:0px;
+	border-style: solid;
+	margin: 10px 0 10px 20px;
 
 }
 #header {
 	
 }
 #header h1 a {
-
+	display: block;
+	width:800px;
+	height:140px;
+	background-image: url(../resources/header.jpg);
+	text-indent: 100%;
+	white-space: nowrap;
+	overflow: hidden;
 }
 #nav {
 	background-color: #000;
