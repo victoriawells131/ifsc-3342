@@ -60,7 +60,9 @@ img{
 	float: right;
 	border: #000;
 	border-width: 10px;
-	margin: auto;
+	margin: 5px 5px 5px 5px;
+	padding:0px;
+
 }
 #header {
 	
