@@ -108,7 +108,7 @@ img{
 	margin-right: 20px;
 	margin-left: 20px;
 }
-@media screen and (max-width: 992px) {
+@media screen {
 	body {
 	  background-color: #171717;
 	
