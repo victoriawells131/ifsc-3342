@@ -1,0 +1,23 @@
+body * {
+    font-family: "Montserrat", sans-serif;
+    
+  }
+  html,
+  body {
+    background-color: rgb(243, 217, 230);
+    padding: 0;
+    margin: 0;
+    scroll-behavior: smooth;
+  }
+  
+  h1,
+  h2,
+  h3,
+  h4 {
+    font-weight: bold;
+    text-align: center;
+  }
+  
+  ul li {
+    border: none !important;
+  }
