@@ -26,36 +26,34 @@ html {
     width: 1136px;
     margin: 20px auto;
     border: 1px solid black;
-    background-image: url("../img/grid.png");
   }
   header.primary{
-    width:1096px;
-    margin:20px;
+    width:96.65%;
+    margin:1.760%;
     background-color: rgba(0, 0, 0, 0.4);
     float:left;
-    
-    padding:20px;
+    padding:1.824%;
   }
   #blog{
-    width: 724px;
+    width: 63.73%;
   background-color: rgba(0, 0, 0, 0.4);
   float: left;
-  margin-left: 20px;
-  padding: 20px; 
+  margin-left:1.760%;
+  padding: 1.824%; 
   }
   aside {
-    width: 352px;
+    width:30.98%;
     float: left;
     background-color: rgba(0, 0, 0, 0.4);
-    margin-left: 20px;
-    padding: 20px;
+    margin-left: 1.760%;
+    padding: 1.824%;
   }
   footer.primary {
-    width: 1096px;
-    margin: 20px;
+    width: 96.65%;
+    margin: 1.760%;
     background-color: rgba(0, 0, 0, 0.4);
     float: left;
-    padding: 20px;
+    padding: 1.824%;
   }
   
   /* End of "Micro clearfix" */
