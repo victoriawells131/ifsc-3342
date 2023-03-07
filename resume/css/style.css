@@ -24,7 +24,7 @@ html {
 }
 
 /* ------ Typography -------*/
-body{font-family: 'Open Sans', sans-serif;}
+
 
 /* ------ Fluid Images -------*/
 
@@ -34,7 +34,7 @@ img{max-width:100%;}
 .container{
   margin:0 auto;
   background:rgba(243, 164, 198, 0.15);
-  width:480px;
+  width:500px;
 }
 
 /* ------ Helper Classes -------*/
@@ -52,7 +52,7 @@ img{max-width:100%;}
 
 /* ------ Global Styles -------*/
 body{
-  background:#efefef;
+  background:#ffffff;
   color:#222222;
   line-height:1.6
 } 
@@ -73,9 +73,9 @@ nav a:link, nav a:visited{
   color:#222222;
   text-transform:uppercase;
   font-size:.75em;
-  background:rgba(0,0,0,.65);
+  background:rgba(255, 255, 255, 0.65);
   transition: background-color .5s ease;
-  color:#fff;
+  color:#080707;
 }
 
 nav a:hover{
