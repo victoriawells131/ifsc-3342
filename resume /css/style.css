@@ -16,14 +16,65 @@ html {
   font-size: 1em;
   line-height: 1.4;
 }
+html {
+  box-sizing: border-box;
+}
+*, *:before, *after {
+  box-sizing: inherit;
+}
+/* ------ Typography -----*/
+/* ------ Fluid Images ----*/
 
-/*
- * Remove text-shadow in selection highlight:
- * https://twitter.com/miketaylr/status/12228805301
- *
- * Customize the background color to match your design.
- */
+/*------Utility Classes -----*/
+.container{
+  margin:0 auto;
+  width:500px;
+}
 
+/*------Helper Classes------*/
+.visuallyhidden {
+  .visuallyhidden {
+    border: 0;
+    clip: rect(0 0 0 0);
+    height: 1px;
+    margin: -1px;
+    overflow: hidden;
+    padding: 0;
+    position: absolute;
+    width: 1px;
+    white-space: nowrap; /* 1 */
+}
+/*-------Global Styles------*/
+body{
+
+}
+
+nav{
+  display:grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  padding: 20px 20px 0px 20px;
+}
+main{
+  padding: 1px 20px;
+}
+main h1 {
+  display:flex;
+  flex-direction:row;
+  justify-content: center;
+  text-align: center;
+}
+main h1:before, main h1:after {
+  content: '\a0';
+  flex-grow:1;
+  height:1px;
+  position: relative;
+  top: 0.77em;
+}
+dl{
+  display: grid;
+  grid-template-rows: auto;
+  grid-template-columns: 8em 1fr;
+}
 ::-moz-selection {
   background: #b3d4fc;
   text-shadow: none;

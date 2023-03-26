@@ -28,7 +28,7 @@ html {
 
 /* ------ Fluid Images -------*/
 
-img{max-width:100%;}
+img{max-width:50%;}
 
 /* ------ Utility Classes  -------*/
 .container{
@@ -108,7 +108,12 @@ main h1:before {
 main h1:after {
   margin-left:15px;
 }
-
+img{
+  display:block;
+  float:right;
+  border: #000;
+  
+}
 dl{
   display: grid;
   grid-template-rows:auto;
