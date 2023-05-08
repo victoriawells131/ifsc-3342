@@ -21,8 +21,10 @@ body {
   }
   
 .col{
-display:grid;
   padding: 50px;
+}
+.card{
+width:18rem;
 }
 
 ::-moz-selection {
