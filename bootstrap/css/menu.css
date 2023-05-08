@@ -34,9 +34,19 @@ html {
   padding:10px;
   margin:auto;
   }
-  /* Base */
+
+  /* Menu Card Styles */
   .card{
   width: 17em;
+  }
+  .card-body{
+  background-color: #ffe4e4;
+  }
+  .card-title{
+  font-weight: bold;
+  }
+  .card-text{
+  font-style:italic;
   }
   .col p {
     color: #fff;
