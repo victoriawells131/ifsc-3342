@@ -8,7 +8,11 @@ html {
   *:before,
   *:after {
     box-sizing: inherit;
-    margin: 10px;
+    
+}
+.card{
+margin: auto;
+width:18em;
 }
 body {
   font-family: "Nunito", sans-serif;
@@ -22,7 +26,7 @@ body {
   }
   
 .col{
-  padding: 50px;
+  padding: 10px;
 }
 	/*.row {
 			display: flex;
