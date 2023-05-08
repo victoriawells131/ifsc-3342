@@ -23,10 +23,20 @@ body {
 .col{
   padding: 50px;
 }
-.card{
-width:18rem;
-}
-
+	.row {
+			display: flex;
+			flex-wrap: wrap;
+			margin: 0 -15px;
+		}
+		.col {
+			flex: 1;
+			padding: 0 15px;
+			box-sizing: border-box;
+		}
+		.col img {
+			width: 100%;
+			height: auto;
+		}
 ::-moz-selection {
   background: #b3d4fc;
   text-shadow: none;
