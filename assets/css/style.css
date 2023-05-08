@@ -2,93 +2,13 @@ body * {
     font-family: "Montserrat", sans-serif;
     
   }
-  html,
-  body {
-    background-color: rgb(243, 217, 230);
-    padding: 0;
-    margin: 40;
-    scroll-behavior: smooth;
-    box-sizing: border-box;
-  }
-  
-  h1,
-  h2,
-  h3,
-  h4 {
-    font-weight: bold;
-    text-align: center;
-  }
-  
-  ul li {
-    border: none !important;
-  }
+ .grid-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
 
-    
-  }
-  *,
-  *:before,
-  *:after {
-    box-sizing: inherit;
-  }
-
- 
-  /*Nicolas Gallagher http://nicolasgallagher.com/micro-clearfix-hack/ */
-  /* Start of "Micro clearfix" */
-  
-  .cf {
-    zoom: 1;
-  }
-  .cf:before,
-  .cf:after {
-    content: "";
-    display: table;
-  }
-  .cf:after {
-    clear: both;
-  }
-  main {
-    width: 80vw;
-    margin: 20px auto;
-    border: 1px solid black;
-    display:grid;
-    grid-template-columns: 12, 1fr;
-    grid-gap:20px;
-    padding: 0 20px;
-  }
-  header.primary{
-    background-color: rgba(0, 0, 0, 0.4);
-    grid-column:1 / span 12;
-    padding:20px;
-    
-  }
-  #content{
-    background-color: rgba(0, 0, 0, 0.4);
-    grid-column: 1 / span 12;
-    display:grid;
-    grid-template-columns: subgrid;
-    grid-template-columns: 12, 1fr;
-    grid-gap:20px;
-  }
-  #blog{
-  grid-column: 1 / span 9;
-  background-color: rgba(0, 0, 0, 0.4);
-  padding:20px;
-  
-  }
-  aside {
-    background-color: rgba(0, 0, 0, 0.4);
-    grid-column: 10 / span 3 ;
-    padding:20px;
-    
-  }
-  footer.primary {
-    background-color: rgba(0, 0, 0, 0.4);
-    grid-column:1 / span 12;
-    padding:20px;
-    
-  }
-  
-  /* End of "Micro clearfix" */
-  
-  
-  background-image:url("https://s3-us-west-2.amazonaws.com/s.cdpn.io/7248/grid-1.png");*/
+.grid-item {
+  width: 30%;
+  margin-bottom: 20px;
+}
