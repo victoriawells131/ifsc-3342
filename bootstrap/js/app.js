@@ -1,32 +1,15 @@
-watchPosition(success)
-watchPosition(success, error)
-watchPosition(success, error, options)
-let id;
-let target;
-let options;
-
-function success(pos) {
-  const crd = pos.coords;
-
-  if (target.latitude === crd.latitude && target.longitude === crd.longitude) {
-    console.log("Congratulations, you reached the target");
-    navigator.geolocation.clearWatch(id);
+<script>
+var x = document.getElementById("demo");
+function getLocation() {
+  if (navigator.geolocation) {
+    navigator.geolocation.getCurrentPosition(showPosition);
+  } else {
+    x.innerHTML = "Geolocation is not supported by this browser.";
   }
 }
 
-function error(err) {
-  console.error(`ERROR(${err.code}): ${err.message}`);
+function showPosition(position) {
+  x.innerHTML = "Latitude: " + position.coords.latitude +
+  "<br>Longitude: " + position.coords.longitude;
 }
-
-target = {
-  latitude: 0,
-  longitude: 0,
-};
-
-options = {
-  enableHighAccuracy: false,
-  timeout: 5000,
-  maximumAge: 0,
-};
-
-id = navigator.geolocation.watchPosition(success, error, options);
+</script>
