@@ -8,6 +8,7 @@ html {
   *:before,
   *:after {
     box-sizing: inherit;
+    margin: 10px;
 }
 body {
   font-family: "Nunito", sans-serif;
