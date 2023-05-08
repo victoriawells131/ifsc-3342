@@ -30,9 +30,11 @@ html {
     border:1px solid #c0c0c0;
     border-radius:6px;
   }
-  
-  /* Base */
+  .container{
+  padding:10px;
   }
+  /* Base */
+  
   .col p {
     color: #fff;
     margin: 0px;
