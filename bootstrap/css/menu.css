@@ -1,164 +1,50 @@
+/* apply a natural box layout model to all elements, but allowing components to change 
+http://thomaswallace.net/modules/understanding-web-related-terminology/
+http://www.paulirish.com/2012/box-sizing-border-box-ftw/
+
+*/
 html {
-  color: #222;
-  font-size: 1em;
-  line-height: 1.4;
-  box-sizing: border-box;
+    box-sizing: border-box;
   }
   *,
   *:before,
   *:after {
     box-sizing: inherit;
-    
-}
-
-body {
-  font-family: "Nunito", sans-serif;
-    background: #ffffff;
+  }
+  
+  /*Base CSS*/
+  body {
+    font-family: "Droid Serif";
+    background: #374e5a;
     overflow: auto;
-}
-.row{
+  }
+  
+  .row{
     display:grid;
-    grid-template-columns:repeat(3,1fr);
+    grid-template-columns:repeat(4,1fr);
     gap:20px;
   }
   
-.col{
-  padding: 10px;
-}
-	/*.row {
-			display: flex;
-			flex-wrap: wrap;
-			margin: 0 -15px;
-		}
-		.col {
-			flex: 1;
-			padding: 0 15px;
-			box-sizing: border-box;
-		}
-		.col img {
-			width: 100%;
-			height: auto;
-		}*/
-
-::-moz-selection {
-  background: #b3d4fc;
-  text-shadow: none;
-}
-
-::selection {
-  background: #b3d4fc;
-  text-shadow: none;
-}
- 
-
-
-hr {
-  display: block;
-  height: 1px;
-  border: 0;
-  border-top: 1px solid #ccc;
-  margin: 1em 0;
-  padding: 0;
-}
-
-/*
- * Remove the gap between audio, canvas, iframes,
- * images, videos and the bottom of their containers:
- * https://github.com/h5bp/html5-boilerplate/issues/440
- */
-
-audio,
-canvas,
-iframe,
-img,
-svg,
-video {
-  vertical-align: middle;
-}
-
-/*
- * Remove default fieldset styles.
- */
-
-fieldset {
-  border: 0;
-  margin: 0;
-  padding: 0;
-}
-
-/*
- * Allow only vertical resizing of textareas.
- */
-
-textarea {
-  resize: vertical;
-}
-
-
-/*
- * Hide visually and from screen readers
- */
-
-.hidden,
-[hidden] {
-  display: none !important;
-}
-
-.visually-hidden {
-  border: 0;
-  clip: rect(0, 0, 0, 0);
-  height: 1px;
-  margin: -1px;
-  overflow: hidden;
-  padding: 0;
-  position: absolute;
-  white-space: nowrap;
-  width: 1px;
-  /* 1 */
-}
-
-.visually-hidden.focusable:active,
-.visually-hidden.focusable:focus {
-  clip: auto;
-  height: auto;
-  margin: 0;
-  overflow: visible;
-  position: static;
-  white-space: inherit;
-  width: auto;
-}
-
-/*
- * Hide visually and from screen readers, but maintain layout
- */
-
-.invisible {
-  visibility: hidden;
-}
-
-/*
- * Clearfix: contain floats
- *
- * The use of `table` rather than `block` is only necessary if using
- * `::before` to contain the top-margins of child elements.
- */
-
-.clearfix::before,
-.clearfix::after {
-  content: "";
-  display: table;
-}
-
-.clearfix::after {
-  clear: both;
-}
-
-/* ==========================================================================
-   EXAMPLE Media Queries for Responsive Design.
-   These examples override the primary ('mobile first') styles.
-   Modify as content requires.
-   ========================================================================== */
- /* Max Width */
+  .col{
+    padding:20px;
+    border:1px solid #c0c0c0;
+    border-radius:6px;
+  }
+  
+  /* Base */
+  .col:nth-child(odd) {
+    background-color: #8fb87f;
+  }
+  .col p {
+    color: #fff;
+    margin: 0px;
+    text-shadow: 1px 1px #000;
+  }
+  .fancy {
+    display: none;
+  }
+  
+  /* Max Width */
   
   @media screen and (max-width:600px){
     .row{
@@ -170,10 +56,10 @@ textarea {
   
   @media screen and (max-width:800px) and (min-width:601px){
     .row{
-      grid-template-columns:repeat(3,1fr);
+      grid-template-columns:repeat(2,1fr);
     }
     .col:nth-child(odd) {
-      background-color: #ffffff;
+      background-color: #8fb87f;
     }
   }
   
@@ -181,10 +67,10 @@ textarea {
   
   @media screen and (min-width:801px){
     .row {
-      grid-template-columns:repeat(3,1fr);
+      grid-template-columns:repeat(4,1fr);
     }
       body .col:nth-child(odd) {
-      background-color: white;
+      background-color: red;
     }
       
     }
@@ -205,3 +91,5 @@ textarea {
   {
       .fancy{display:block; text-align:center}
   }
+  
+  
