@@ -1,0 +1,29 @@
+<!doctype html>
+<html class="no-js" lang="">
+
+<head>
+  <meta charset="utf-8">
+  <title>Victoria Wells</title>
+  <meta name="description" content="">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+<picture>
+    <img src="image.jpg" alt="A description of the image.">
+  </picture>
+  <picture>
+    <source srcset="image.avif" type="image/avif">
+    <source srcset="image.webp" type="image/webp">
+    <img src="image.jpg" alt="A description of the image." 
+      width="300" height="200" loading="lazy" decoding="async">
+  </picture>
+  <picture>
+    <source srcset="large.png" media="(min-width: 75em)">
+    <source srcset="medium.png" media="(min-width: 40em)">
+    <img src="small.png" alt="A description of the image." 
+      width="300" height="200" loading="lazy" decoding="async">
+  </picture>
+  <picture>
+    <source srcset="large.png 1x" media="(min-width: 75em)">
+    <source srcset="medium.png 1x, large.png 2x" media="(min-width: 40em)">
+    <img src="small.png" alt="A description of the image." width="300" height="200" loading="lazy" decoding="async"
+      srcset="small.png 1x, medium.png 2x, large.png 3x">
+  </picture>
