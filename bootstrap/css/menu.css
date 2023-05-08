@@ -10,10 +10,7 @@ html {
     box-sizing: inherit;
     
 }
-.card{
-margin: auto;
-width:18em;
-}
+
 body {
   font-family: "Nunito", sans-serif;
     background: #ffffff;
@@ -52,6 +49,10 @@ body {
   background: #b3d4fc;
   text-shadow: none;
 }
+ .container{
+    width: 100%;
+    margin-right: auto;
+    margin-left: auto;}
 
 
 hr {
