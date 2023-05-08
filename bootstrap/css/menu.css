@@ -32,8 +32,6 @@ html {
   }
   
   /* Base */
-  .col:nth-child(odd) {
-    background-color: #8fb87f;
   }
   .col p {
     color: #fff;
