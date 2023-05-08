@@ -39,9 +39,6 @@ html {
   .card{
   width: 17em;
   }
-  .card-body{
-  background-color: #ffe4e4;
-  }
   .card-title{
   font-weight: bold;
   }
