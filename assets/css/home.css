@@ -17,6 +17,9 @@ html {
       background: #ffffff;
       overflow: auto;
   }
+  .dropdown {
+    position:relative;
+  }
   .row{
       display:grid;
       grid-template-columns:repeat(2,1fr);
