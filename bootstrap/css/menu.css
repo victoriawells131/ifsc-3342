@@ -14,8 +14,8 @@ html {
   
   /*Base CSS*/
   body {
-    font-family: "Droid Serif";
-    background: #374e5a;
+   font-family: "Nunito", sans-serif;
+    background: #ffffff;
     overflow: auto;
   }
   
