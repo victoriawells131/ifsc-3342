@@ -1,33 +1,44 @@
 /*! HTML5 Boilerplate v8.0.0 | MIT License | https://html5boilerplate.com/ */
 
-/* main.css 3.0.0 | MIT License | https://github.com/h5bp/main.css#readme */
-/*
- * What follows is the result of much research on cross-browser styling.
- * Credit left inline and big thanks to Nicolas Gallagher, Jonathan Neal,
- * Kroc Camen, and the H5BP dev community and team.
- */
 
-/* ==========================================================================
-   Base styles: opinionated defaults
-   ========================================================================== */
+  
 
+  
+  
+  
+ 
+  
+  
+  
+  
+ 
+  
+  
 html {
   color: #222;
   font-size: 1em;
   line-height: 1.4;
+  box-sizing: border-box;
+  }
+  *,
+  *:before,
+  *:after {
+    box-sizing: inherit;
 }
 body {
   font-family: "Nunito", sans-serif;
+    background: #ffffff;
+    overflow: auto;
 }
+.row{
+    display:grid;
+    grid-template-columns:repeat(4,1fr);
+    gap:20px;
+  }
+  
 .col{
   padding: 50px;
 }
-/*
- * Remove text-shadow in selection highlight:
- * https://twitter.com/miketaylr/status/12228805301
- *
- * Customize the background color to match your design.
- */
 
 ::-moz-selection {
   background: #b3d4fc;
@@ -39,9 +50,6 @@ body {
   text-shadow: none;
 }
 
-/*
- * A better looking default horizontal rule
- */
 
 hr {
   display: block;
@@ -85,13 +93,6 @@ textarea {
   resize: vertical;
 }
 
-/* ==========================================================================
-   Author's custom styles
-   ========================================================================== */
-
-/* ==========================================================================
-   Helper classes
-   ========================================================================== */
 
 /*
  * Hide visually and from screen readers
@@ -101,15 +102,6 @@ textarea {
 [hidden] {
   display: none !important;
 }
-
-/*
- * Hide only visually, but have it available for screen readers:
- * https://snook.ca/archives/html_and_css/hiding-content-for-accessibility
- *
- * 1. For long content, line feeds are not interpreted as spaces and small width
- *    causes content to wrap 1 word per line:
- *    https://medium.com/@jessebeach/beware-smushed-off-screen-accessible-text-5952a4c2cbfe
- */
 
 .visually-hidden {
   border: 0;
@@ -123,12 +115,6 @@ textarea {
   width: 1px;
   /* 1 */
 }
-
-/*
- * Extends the .visually-hidden class to allow the element
- * to be focusable when navigated to via the keyboard:
- * https://www.drupal.org/node/897638
- */
 
 .visually-hidden.focusable:active,
 .visually-hidden.focusable:focus {
@@ -171,12 +157,59 @@ textarea {
    These examples override the primary ('mobile first') styles.
    Modify as content requires.
    ========================================================================== */
-
+ /* Max Width */
+  
+  @media screen and (max-width:600px){
+    .row{
+      grid-template-columns:1fr;
+    }
+  }
+  
+  /* Ranged */
+  
+  @media screen and (max-width:800px) and (min-width:601px){
+    .row{
+      grid-template-columns:repeat(2,1fr);
+    }
+    .col:nth-child(odd) {
+      background-color: #ffffff;
+    }
+  }
+  
+  /* Min Width */
+  
+  @media screen and (min-width:801px){
+    .row {
+      grid-template-columns:repeat(4,1fr);
+    }
+      body .col:nth-child(odd) {
+      background-color: white;
+    }
+      
+    }
+    
+    
+  }
+  
+  /*retina specific --- https://goo.gl/Pgu6y */
+  
+  
+  @media
+  only screen and (-webkit-min-device-pixel-ratio: 1.25),
+  only screen and ( min--moz-device-pixel-ratio: 1.25),
+  only screen and ( -o-min-device-pixel-ratio: 1.25/1),
+  only screen and ( min-device-pixel-ratio: 1.25),
+  only screen and ( min-resolution: 200dpi),
+  only screen and ( min-resolution: 1.25dppx)
+  {
+      .fancy{display:block; text-align:center}
+  }
+ /* 
 @media only screen and (min-width: 35em) {
   /* Style adjustments for viewports that meet the condition */
 }
 
-@media print,
+/*@media print,
   (-webkit-min-device-pixel-ratio: 1.25),
   (min-resolution: 1.25dppx),
   (min-resolution: 120dpi) {
@@ -189,13 +222,13 @@ textarea {
    https://www.phpied.com/delay-loading-your-print-css/
    ========================================================================== */
 
-@media print {
+/*@media print {
   *,
   *::before,
   *::after {
     background: #fff !important;
     color: #000 !important;
-    /* Black prints faster */
+    /* Black prints faster 
     box-shadow: none !important;
     text-shadow: none !important;
   }
@@ -212,11 +245,11 @@ textarea {
   abbr[title]::after {
     content: " (" attr(title) ")";
   }
-
+*/
   /*
    * Don't show links that are fragment identifiers,
    * or use the `javascript:` pseudo protocol
-   */
+   
   a[href^="#"]::after,
   a[href^="javascript:"]::after {
     content: "";
@@ -249,4 +282,4 @@ textarea {
     page-break-after: avoid;
   }
 }
-
+*/
